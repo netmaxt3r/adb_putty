@@ -328,7 +328,7 @@ enum {
 
 enum {
     /* Protocol back ends. (CONF_protocol) */
-    PROT_RAW, PROT_TELNET, PROT_RLOGIN, PROT_SSH,
+    PROT_RAW, PROT_TELNET, PROT_RLOGIN, PROT_SSH, PROT_ADB,
     /* PROT_SERIAL is supported on a subset of platforms, but it doesn't
      * hurt to define it globally. */
     PROT_SERIAL
@@ -1103,6 +1103,10 @@ extern Backend telnet_backend;
  */
 extern Backend ssh_backend;
 
+/*
+ * Exports from adb.c.
+ */
+extern Backend adb_backend;
 /*
  * Exports from ldisc.c.
  */
