@@ -1786,7 +1786,7 @@ extern const struct BackendVtable sshconn_backend;
 /*
  * Exports from adb.c.
  */
-extern BackendVtable adb_backend;
+extern const struct BackendVtable adb_backend;
 /*
  * Exports from ldisc.c.
  * Exports from supdup.c.
