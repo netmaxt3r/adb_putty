@@ -1,4 +1,4 @@
-This is the README for the source archive of PuTTY, a free Win32
+This is the README for the source archive of PuTTY, a free Windows
 and Unix Telnet and SSH client.
 
 If you want to rebuild PuTTY from source, we provide a variety of
@@ -17,9 +17,13 @@ For building on Windows:
    systems. Change into the `windows' subdirectory and type `nmake
    -f Makefile.vc' to build all the PuTTY binaries.
 
-   As of 2016, we successfully compiled PuTTY with both Visual Studio
+   As of 2017, we successfully compile PuTTY with both Visual Studio
    7 (2003) and Visual Studio 14 (2015), so our guess is that it will
    probably build with versions in between those as well.
+
+   (The binaries from Visual Studio 14 are only compatible with
+   Windows XP and up. Binaries from Visual Studio 7 ought to work
+   with anything from Windows 95 onward.)
 
  - Inside the windows/MSVC subdirectory are MS Visual Studio project
    files for doing GUI-based builds of the various PuTTY utilities.
@@ -29,10 +33,6 @@ For building on Windows:
    corresponding .dsp file in Visual Studio. For example,
    MSVC/putty/putty.dsp builds PuTTY itself, MSVC/plink/plink.dsp
    builds Plink, and so on.
-
- - windows/Makefile.bor is for the Borland C compiler. Type `make -f
-   Makefile.bor' while in the `windows' subdirectory to build all
-   the PuTTY binaries.
 
  - windows/Makefile.mgw is for MinGW / Cygwin installations. Type
    `make -f Makefile.mgw' while in the `windows' subdirectory to
@@ -53,7 +53,7 @@ For building on Windows:
  - Inside the windows/DEVCPP subdirectory are Dev-C++ project
    files for doing GUI-based builds of the various PuTTY utilities.
 
-The PuTTY team actively use Makefile.vc (with VC7) and Makefile.mgw
+The PuTTY team actively use Makefile.vc (with VC7/10) and Makefile.mgw
 (with mingw32), so we'll probably notice problems with those
 toolchains fairly quickly. Please report any problems with the other
 toolchains mentioned above.
@@ -123,11 +123,11 @@ Documentation (in various formats including Windows Help and Unix
 `man' pages) is built from the Halibut (`.but') files in the `doc'
 subdirectory using `doc/Makefile'. If you aren't using one of our
 source snapshots, you'll need to do this yourself. Halibut can be
-found at <http://www.chiark.greenend.org.uk/~sgtatham/halibut/>.
+found at <https://www.chiark.greenend.org.uk/~sgtatham/halibut/>.
 
 The PuTTY home web site is
 
-    http://www.chiark.greenend.org.uk/~sgtatham/putty/
+    https://www.chiark.greenend.org.uk/~sgtatham/putty/
 
 If you want to send bug reports or feature requests, please read the
 Feedback section of the web site before doing so. Sending one-line
